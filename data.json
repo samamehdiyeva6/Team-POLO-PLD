@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Portfolio Website",
+    "status": "Completed",
+    "link": "#"
+  },
+  {
+    "title": "Task Manager",
+    "status": "In Progress",
+    "link": "#"
+  },
+  {
+    "title": "Weather App",
+    "status": "Planned",
+    "link": "#"
+  }
+]
