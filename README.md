@@ -1,52 +1,55 @@
 # 🚀 Team-POLO | Peer Learning Day Portfolio
 
-Welcome to the official repository for **Team-POLO**. This project was developed during our weekly Peer Learning Day (PLD) to showcase our collective skills, individual identities, and our ability to build a cohesive web experience under a tight deadline.
+Welcome to the official repository for **Team-POLO**. This project was developed during our weekly Peer Learning Day (PLD) to showcase our collective technical growth and our ability to build a cohesive, data-driven web experience.
 
 ---
 
 ## 🏗 Project Overview
-The goal of this project was to design and develop a responsive, modern team portfolio website. We focused on clean UI, smooth navigation, and a unified design language that reflects our team's unique personality and technical proficiency.
+For this PLD task, we developed a responsive team portfolio. Instead of static hard-coding, we implemented a dynamic approach where team information is pulled from a centralized `data.json` file, allowing for easy updates and scalable architecture.
 
 ## 🏠 Key Sections
-* **Hero Header:** A high-impact introduction to Team-POLO.
-* **About Us:** Our team mission statement and core values.
-* **Member Spotlight:** Individual profile cards featuring bios, technical skills, and social links.
-* **Project Gallery:** A showcase of the work we’ve built during our learning journey.
-* **Contact / Footer:** Links to our individual GitHub profiles and contact information.
+* **Hero Header:** A bold, modern call-to-action (CTA) inviting collaboration.
+* **Team Gallery:** A dynamically generated section showcasing our 6 members.
+* **About Us:** A summary of our team's mission during the PLD sessions.
+* **Project Showcase:** Highlighting the technical milestones we've reached together.
 
 ---
 
 ## 🛠 Tech Stack
-We utilized a streamlined stack to ensure performance and maintainability:
+We utilized a modern web stack to ensure the project is both performant and easy to maintain:
 
 | Technology | Purpose |
 | :--- | :--- |
-| **HTML5** | Semantic structure and accessibility |
-| **CSS3** | Custom styling, Flexbox, and Grid layouts |
-| **JavaScript** | DOM manipulation and interactive components |
-| **Markdown** | Documentation and project summary |
+| **HTML5** | Semantic structure and accessible DOM. |
+| **CSS3** | Custom styling with a "POLO" namespace for modularity. |
+| **JavaScript** | Fetching and rendering data from JSON. |
+| **JSON** | Acting as a lightweight database for team information. |
 
 ---
 
-## 👥 Team Members
+## 👥 The Team (Full Stack Developers)
+Every member of Team-POLO contributed across the entire stack, from UI design and CSS architecture to JSON data management and JavaScript logic.
+
 | Name | Role | GitHub |
 | :--- | :--- | :--- |
-| **Member 1** | Project Lead | [@username](https://github.com/) |
-| **Member 2** | UI/UX & Design | [@username](https://github.com/) |
-| **Member 3** | Frontend Developer | [@username](https://github.com/) |
-| **Member 4** | Documentation & QA | [@username](https://github.com/) |
+| **Sama Mehdiyeva** | Full Stack Developer | [Profile](https://github.com/) |
+| **Elnara Malikzada** | Full Stack Developer | [Profile](https://github.com/) |
+| **Aysu Mustafazada** | Full Stack Developer | [Profile](https://github.com/) |
+| **Ismayil Abbasli** | Full Stack Developer | [Profile](https://github.com/) |
+| **Ramal Mirzazada** | Full Stack Developer | [Profile](https://github.com/) |
+| **Tural Gasimov** | Full Stack Developer | [Profile](https://github.com/) |
 
 ---
 
-## 🧠 Learning Objectives (PLD)
-Throughout this task, the team successfully navigated:
-* **Collaborative Workflow:** Mastering Git branching and resolving merge conflicts.
-* **Responsive Design:** Using media queries to ensure the site works on mobile and desktop.
-* **Peer Review:** Implementing a code review process to maintain high standards.
+## 🧠 Learning Objectives
+During this session, Team-POLO focused on:
+* **Modular CSS:** Using specific classes to prevent style leakage.
+* **Data Separation:** Moving team content into `data.json` to keep the HTML clean.
+* **Collaboration:** Coordinating 6 developers on a single repository using Git.
 
 ---
 
-## 🚀 How to View
+## 🚀 Installation & Usage
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/your-username/Team-POLO-PLD.git](https://github.com/your-username/Team-POLO-PLD.git)
+   git clone [https://github.com/your-repo/Team-POLO-PLD.git](https://github.com/your-repo/Team-POLO-PLD.git)
