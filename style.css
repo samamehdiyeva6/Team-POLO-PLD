@@ -762,6 +762,7 @@ h1 {
 
 .btn:hover {
     background-color: #0056b3;
+}
 /* Footer Styling */
 .footer {
     background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
