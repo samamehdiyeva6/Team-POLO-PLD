@@ -18,10 +18,7 @@
     --spacing-xl: 2rem;
     --spacing-2xl: 3rem;
 
-    /* Typography */<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="20" height="20" rx="4" fill="white" />
-                    <path d="M10 5L15 10L10 15L5 10Z" fill="currentColor" />
-                </svg>
+    /* Typography */
     --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     --font-size-sm: 13px;
     --font-size-base: 14px;
@@ -89,16 +86,16 @@ body {
     align-items: center;
     gap: var(--spacing-md);
     flex-shrink: 0;
-    width: 40px;
-    height: 40px;
+    text-decoration: none;
+    margin: 10px;
 }
 
 .logo-badge {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 32px;
-    height: 32px;
+    width: 50px;
+    height: 50px;
     background-color: var(--color-blue-primary);
     border-radius: var(--border-radius-sm);
     color: var(--color-white);
@@ -111,10 +108,19 @@ body {
 }
 
 .logo-text {
-    font-size: var(--font-size-lg);
+    font-size: 20px;
     font-weight: var(--font-weight-semibold);
     color: var(--color-gray-dark);
     white-space: nowrap;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: color var(--transition-fast);
+    cursor: pointer;
+}
+
+.logo-text:hover {
+    color: var(--color-blue-primary);
 }
 
 /* Navbar Links */
