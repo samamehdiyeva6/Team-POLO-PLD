@@ -41,4 +41,23 @@
     }
   ]
 }
+[
+  {
+    "title": "Portfolio Website",
+    "status": "Completed",
+    "link": "#",
+    "image": "assets/images/project1.png"
+  },
+  {
+    "title": "Task Manager",
+    "status": "In Progress",
+    "link": "#",
+    "image": "assets/images/project2.png"
+  },
+  {
+    "title": "Weather App",
+    "status": "Planned",
+    "link": "#",
+    "image": "assets/images/project3.png"
+  }
 ]
