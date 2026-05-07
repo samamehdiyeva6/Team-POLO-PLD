@@ -32,12 +32,12 @@ Every member of Team-POLO contributed across the entire stack, from UI design an
 
 | Name | Role | GitHub |
 | :--- | :--- | :--- |
-| **Sama Mehdiyeva** | Full Stack Developer | [Profile](https://github.com/) |
-| **Elnara Malikzada** | Full Stack Developer | [Profile](https://github.com/) |
-| **Aysu Mustafazada** | Full Stack Developer | [Profile](https://github.com/) |
-| **Ismayil Abbasli** | Full Stack Developer | [Profile](https://github.com/) |
-| **Ramal Mirzazada** | Full Stack Developer | [Profile](https://github.com/) |
-| **Tural Gasimov** | Full Stack Developer | [Profile](https://github.com/) |
+| **Sama Mehdiyeva** | Full Stack Developer | [Profile](https://github.com/samamehdiyeva6) |
+| **Elnara Malikzada** | Full Stack Developer | [Profile](https://github.com/elnara-malikzade-12728) |
+| **Aysu Mustafazada** | Full Stack Developer | [Profile](https://github.com/aysumustafazade) |
+| **Ismayil Abbasli** | Full Stack Developer | [Profile](https://github.com/IsmayilAbbasli69) |
+| **Ramal Mirzazada** | Full Stack Developer | [Profile](https://github.com/MR10587) |
+| **Tural Gasimov** | Full Stack Developer | [Profile](https://github.com/turalgasimov) |
 
 ---
 
@@ -53,3 +53,4 @@ During this session, Team-POLO focused on:
 1. Clone the repository:
    ```bash
    git clone [https://github.com/your-repo/Team-POLO-PLD.git](https://github.com/your-repo/Team-POLO-PLD.git)
+

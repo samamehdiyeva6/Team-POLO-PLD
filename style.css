@@ -365,3 +365,194 @@
     background-color: #ffffff;
     transform: translateY(-2px);
 }		
+/* ========================================
+   NAVBAR-ONLY STYLES (NO GLOBAL CONFLICTS)
+   ======================================== */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    height: 70px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.navbar .navbar-logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-shrink: 0;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.navbar .logo-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #1e5cff;
+    border-radius: 4px;
+    color: #ffffff;
+    flex-shrink: 0;
+}
+
+.navbar .logo-badge svg {
+    width: 18px;
+    height: 18px;
+}
+
+.navbar .logo-text {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1f2937;
+    white-space: nowrap;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.15s ease;
+    cursor: pointer;
+}
+
+.navbar .logo-text:hover {
+    color: #1e5cff;
+}
+
+.navbar .navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex: 1;
+    justify-content: center;
+}
+
+.navbar .nav-link {
+    font-size: 14px;
+    color: #1f2937;
+    text-decoration: none;
+    transition: color 0.15s ease;
+    font-weight: 400;
+    position: relative;
+}
+
+.navbar .nav-link:hover {
+    color: #1e5cff;
+}
+
+.navbar .nav-link.active {
+    color: #1f2937;
+    font-weight: 500;
+}
+
+.navbar .nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: #1e5cff;
+    border-radius: 2px;
+}
+
+.navbar .navbar-actions {
+    display: flex;
+    gap: 1rem;
+    flex-shrink: 0;
+}
+
+.navbar .btn-contact {
+    font-size: 13px;
+    color: #1e5cff;
+    background-color: transparent;
+    border: 1.5px solid #1e5cff;
+    border-radius: 24px;
+    padding: 8px 20px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    font-weight: 500;
+    height: 36px;
+    white-space: nowrap;
+}
+
+.navbar .btn-contact:hover {
+    background-color: #1e5cff;
+    color: #ffffff;
+}
+
+.navbar .btn-contact:active {
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0 1rem;
+        height: auto;
+        gap: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .navbar .navbar-logo {
+        order: 1;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .navbar .navbar-links {
+        order: 2;
+        gap: 1.5rem;
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        display: none;
+    }
+
+    .navbar .navbar-links.active {
+        display: flex;
+    }
+
+    .navbar .nav-link.active::after {
+        display: none;
+    }
+
+    .navbar .navbar-actions {
+        order: 3;
+    }
+
+    .navbar .btn-contact {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 0 1rem;
+    }
+
+    .navbar .logo-text {
+        font-size: 14px;
+    }
+
+    .navbar .navbar-links {
+        gap: 1rem;
+    }
+
+    .navbar .nav-link {
+        font-size: 13px;
+    }
+
+    .navbar .btn-contact {
+        font-size: 12px;
+        padding: 7px 16px;
+        height: 32px;
+    }
+}
