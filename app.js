@@ -45,15 +45,22 @@ async function loadTeam() {
 }
 
 window.addEventListener('DOMContentLoaded', loadTeam);
+// ...existing code...
 async function fetchProjects() {
     try {
         const response = await fetch('data.json');
         const data = await response.json();
+        
+        // Əgər səhifədə project-container yoxdursa, kod qırılmasın deyə yoxlanış edirik
         const container = document.getElementById('project-container');
+        if (!container) return; 
 
         container.innerHTML = ''; // Clear container
 
-        data.forEach(project => {
+        // data[1] yox, data[0] olmalıdır
+        const projects = data[0].projects;
+        
+        projects.forEach(project => {
             const card = document.createElement('div');
             card.className = 'card';
             card.innerHTML = `
@@ -70,5 +77,27 @@ async function fetchProjects() {
         console.error("Error loading JSON. Make sure you are using a Live Server!", error);
     }
 }
+// ...existing code...
 
-fetchProjects();
+// ...existing code...
+fetch('data.json')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return response.json();
+  })
+  .then(data => {
+    const members = data.members;
+    const projects = data.projects;
+    
+    // Call your functions to render data to the website
+    // renderMembers(members);
+    loadTeam();
+    // renderProjects(projects);
+    fetchProjects();
+  })
+  .catch(error => {
+    console.error('Error fetching data:', error);
+  });
+// ...existing code...

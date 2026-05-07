@@ -38,25 +38,27 @@
       "github": "https://github.com/turalgasimov",
       "bio": "Ensuring smooth deployments and robust system performance."
     }
-  ]
+  ],
+    "projects": [
+        {
+        "title": "Portfolio Website",
+        "status": "Completed",
+        "link": "#",
+        "image": "assets/images/project1.png"
+        },
+        {
+        "title": "Task Manager",
+        "status": "In Progress",
+        "link": "#",
+        "image": "assets/images/project2.png"
+        },
+        {
+        "title": "E-commerce Platform",
+        "status": "Planned",
+        "link": "#",
+        "image": "assets/images/project3.png"
+        }
+    ]
 }
-[
-  {
-    "title": "Portfolio Website",
-    "status": "Completed",
-    "link": "#",
-    "image": "assets/images/project1.png"
-  },
-  {
-    "title": "Task Manager",
-    "status": "In Progress",
-    "link": "#",
-    "image": "assets/images/project2.png"
-  },
-  {
-    "title": "Weather App",
-    "status": "Planned",
-    "link": "#",
-    "image": "assets/images/project3.png"
-  }
+ 
 ]
