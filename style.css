@@ -1,0 +1,251 @@
+/* ========================================
+   CSS VARIABLES & ROOT STYLES
+   ======================================== */
+:root {
+    /* Colors */
+    --color-blue-primary: #1e5cff;
+    --color-gray-dark: #1f2937;
+    --color-gray-medium: #6b7280;
+    --color-gray-light: #f3f4f6;
+    --color-border: #e5e7eb;
+    --color-white: #ffffff;
+
+    /* Spacing */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+    --spacing-2xl: 3rem;
+
+    /* Typography */
+    --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    --font-size-sm: 13px;
+    --font-size-base: 14px;
+    --font-size-lg: 15px;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* Border radius */
+    --border-radius-sm: 4px;
+    --border-radius-md: 8px;
+    --border-radius-lg: 12px;
+    --border-radius-full: 24px;
+
+    /* Transitions */
+    --transition-fast: 0.15s ease;
+    --transition-base: 0.3s ease;
+
+    /* Z-index */
+    --z-navbar: 100;
+}
+
+/* ========================================
+   GLOBAL STYLES
+   ======================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    color: var(--color-gray-dark);
+    background-color: var(--color-white);
+    line-height: 1.6;
+}
+
+/* ========================================
+   NAVBAR STYLES
+   ======================================== */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 var(--spacing-xl);
+    height: 70px;
+    background-color: var(--color-white);
+    border-bottom: 1px solid var(--color-border);
+    position: sticky;
+    top: 0;
+    z-index: var(--z-navbar);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* Navbar Logo */
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    flex-shrink: 0;
+}
+
+.logo-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background-color: var(--color-blue-primary);
+    border-radius: var(--border-radius-sm);
+    color: var(--color-white);
+    flex-shrink: 0;
+}
+
+.logo-badge svg {
+    width: 18px;
+    height: 18px;
+}
+
+.logo-text {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-gray-dark);
+    white-space: nowrap;
+}
+
+/* Navbar Links */
+.navbar-links {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xl);
+    flex: 1;
+    justify-content: center;
+}
+
+.nav-link {
+    font-size: var(--font-size-base);
+    color: var(--color-gray-dark);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+    font-weight: var(--font-weight-normal);
+    position: relative;
+}
+
+.nav-link:hover {
+    color: var(--color-blue-primary);
+}
+
+.nav-link.active {
+    color: var(--color-gray-dark);
+    font-weight: var(--font-weight-medium);
+}
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: var(--color-blue-primary);
+    border-radius: 2px;
+}
+
+/* Navbar Actions */
+.navbar-actions {
+    display: flex;
+    gap: var(--spacing-md);
+    flex-shrink: 0;
+}
+
+/* Contact Button */
+.btn-contact {
+    font-size: var(--font-size-sm);
+    color: var(--color-blue-primary);
+    background-color: transparent;
+    border: 1.5px solid var(--color-blue-primary);
+    border-radius: var(--border-radius-full);
+    padding: 8px 20px;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    font-weight: var(--font-weight-medium);
+    height: 36px;
+    white-space: nowrap;
+}
+
+.btn-contact:hover {
+    background-color: var(--color-blue-primary);
+    color: var(--color-white);
+}
+
+.btn-contact:active {
+    opacity: 0.9;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0 var(--spacing-md);
+        height: auto;
+        gap: var(--spacing-md);
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .navbar-logo {
+        order: 1;
+        width: 100%;
+        margin-bottom: var(--spacing-md);
+    }
+
+    .navbar-links {
+        order: 2;
+        gap: var(--spacing-lg);
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        display: none;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .nav-link.active::after {
+        display: none;
+    }
+
+    .navbar-actions {
+        order: 3;
+    }
+
+    .btn-contact {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 0 var(--spacing-md);
+    }
+
+    .logo-text {
+        font-size: 14px;
+    }
+
+    .navbar-links {
+        gap: var(--spacing-md);
+    }
+
+    .nav-link {
+        font-size: 13px;
+    }
+
+    .btn-contact {
+        font-size: 12px;
+        padding: 7px 16px;
+        height: 32px;
+    }
+}
