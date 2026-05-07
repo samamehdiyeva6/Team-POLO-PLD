@@ -1,16 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Projects</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design & Engineering Collective</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <!-- Logo -->
+            <div class="logo-badge">
+                <img src="assets/images/logo.png" alt="Team Portfolio Logo" width="100" height="70" />
+            </div>
+            <a href="https://www.chelseafc.com/en" class="navbar-logo" target="_blank" rel="noopener noreferrer">
+                <span class="logo-text">GOAT Team</span>
+            </a>
+            <!-- Navigation Links -->
+            <div class="navbar-links">
+                <a href="#Home" class="nav-link active">Home</a>
+                <a href="#Team" class="nav-link">Team's Wolwes</a>
+                <a href="#Projects" class="nav-link">Our Masterpieces</a>
+                <a href="#Contact" class="nav-link">Contact</a>
+            </div>
+
+            <!-- CTA Button -->
+            <div class="navbar-actions">
+                <button class="btn-contact">Contact us</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- =============================================
+         HERO SECTION
+         ID prefix: hero__
+         Class prefix: hero-
+         Maintained by: [your name]
+         Last updated: 2026-05-07
+    ============================================== -->
+    <section id="hero__section" class="hero-section">
+      <div id="hero__container" class="hero-container">
+
+        <!-- LEFT COLUMN -->
+        <div id="hero__content" class="hero-content">
+
+          <div id="hero__badge" class="hero-badge">
+            Design &amp; Engineering Collective
+          </div>
+
+          <h1 id="hero__headline" class="hero-headline">
+            We build products
+            that <span id="hero__headline-accent" class="hero-headline-accent">solve real problems.</span>
+          </h1>
+
+          <p id="hero__subtext" class="hero-subtext">
+            Designers, engineers, and product leads focused on
+            user-first web experiences. We transform complex
+            challenges into elegant digital solutions.
+          </p>
+
+          <div id="hero__cta-group" class="hero-cta-group">
+            <a id="hero__cta-primary" href="#" class="hero-cta-primary">
+              View Projects
+              <span class="hero-cta-arrow" aria-hidden="true">→</span>
+            </a>
+            <a id="hero__cta-secondary" href="#" class="hero-cta-secondary">
+              Meet the Team
+            </a>
+          </div>
+
+          <div id="hero__trust-badges" class="hero-trust-badges">
+            <span class="hero-trust-item">
+              <svg class="hero-trust-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <circle cx="10" cy="10" r="9" stroke="#6B7280" stroke-width="1.5"/>
+                <path d="M6 10l3 3 5-5" stroke="#6B7280" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Proven Results
+            </span>
+            <span class="hero-trust-item">
+              <svg class="hero-trust-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <circle cx="10" cy="10" r="9" stroke="#6B7280" stroke-width="1.5"/>
+                <path d="M6 10l3 3 5-5" stroke="#6B7280" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Fast Delivery
+            </span>
+          </div>
+
+        </div>
+        <!-- /LEFT COLUMN -->
+
+        <!-- RIGHT COLUMN -->
+        <div id="hero__visual" class="hero-visual">
+
+          <div id="hero__image-wrapper" class="hero-image-wrapper">
+            <img
+              id="hero__team-image"
+              class="hero-team-image"
+              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80"
+              alt="Team collaborating around laptops"
+              loading="eager"
+            />
+          </div>
+
+          <div id="hero__stats-card" class="hero-stats-card">
+            <div id="hero__stats-icon" class="hero-stats-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="22" height="22" rx="6" fill="#EEF2FF"/>
+                <path d="M5 15l3.5-4 3 3.5L15 9l2 6H5z" fill="none" stroke="#3B5BDB" stroke-width="1.6" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div id="hero__stats-text" class="hero-stats-text">
+              <strong id="hero__stats-number" class="hero-stats-number">120+ Projects</strong>
+              <span id="hero__stats-label" class="hero-stats-label">Successfully Launched</span>
+            </div>
+          </div>
+
+        </div>
+        <!-- /RIGHT COLUMN -->
+
+      </div>
+    </section>
+    <!-- /HERO SECTION -->
+    
+    <main class="container">
+        <header class="header">
+            <h1>Team-POLO</h1>
+        </header>
+
+        <div id="team-grid" class="team-grid">
+            </div>
+    </main>
+    
     <div class="container">
         <h1>Selected projects</h1>
         <div id="project-container" class="grid"></div>
     </div>
+    
+    <section class="cta-section">
+        <div class="cta-container">
+            <h2 class="cta-title">Ready to build something extraordinary?</h2>
+            <p class="cta-text">
+                Join dozens of world-class companies already using our expertise to 
+                launch and scale their digital products.
+            </p>
+            <a href="#" class="cta-button">
+                Start a Conversation <span>&rsaquo;</span>
+            </a>
+        </div>
+    </section>
+
     <script src="app.js"></script>
-</body>
+  </body>
+
 </html>
