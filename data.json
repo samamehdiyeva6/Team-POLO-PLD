@@ -1,0 +1,41 @@
+{
+  "teamName": "Team-POLO",
+  "members": [
+    {
+      "name": "Sama Mehdiyeva",
+      "role": "Software Engineer",
+      "github": "https://github.com/SamaMehdiyeva",
+      "bio": "Passionate about building scalable web applications."
+    },
+    {
+      "name": "Elnara Malikzada",
+      "role": "Frontend Developer",
+      "github": "https://github.com/ElnaraMalikzada",
+      "bio": "Focuses on creating intuitive user interfaces and accessible design."
+    },
+    {
+      "name": "Aysu Mustafazada",
+      "role": "UI/UX Designer",
+      "github": "https://github.com/AysuMustafazada",
+      "bio": "Expert in visual storytelling and user-centered design systems."
+    },
+    {
+      "name": "Ismayil Abbasli",
+      "role": "Backend Developer",
+      "github": "https://github.com/IsmayilAbbasli",
+      "bio": "Specializes in database architecture and API optimization."
+    },
+    {
+      "name": "Ramal Mirzazada",
+      "role": "Full Stack Developer",
+      "github": "https://github.com/RamalMirzazada",
+      "bio": "Bridging the gap between design and functionality."
+    },
+    {
+      "name": "Tural Gasimov",
+      "role": "DevOps Engineer",
+      "github": "https://github.com/TuralGasimov",
+      "bio": "Ensuring smooth deployments and robust system performance."
+    }
+  ]
+}
