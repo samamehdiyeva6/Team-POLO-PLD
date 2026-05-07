@@ -82,16 +82,23 @@ body {
 
 .github-btn {
     display: inline-block;
+    padding: 10px 20px;
+    
+    background-color: #0984e3; 
+    
+    color: #ffffff !important; 
+    
     text-decoration: none;
-    color: var(--text-main);
-    font-weight: 600;
-    font-size: 0.85rem;
-    padding: 8px 16px;
-    background: var(--border-light);
     border-radius: 8px;
-    transition: background 0.3s;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-align: center;
+    border: none;
+    cursor: pointer;
 }
 
 .github-btn:hover {
-    background: #e2e2e2;
+    background-color: #074b83;
+    box-shadow: 0 4px 12px rgba(9, 132, 227, 0.3);
+    transform: translateY(-2px);
 }
