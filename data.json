@@ -1,0 +1,64 @@
+[
+    {
+  "teamName": "Team-POLO",
+  "members": [
+    {
+      "name": "Sama Mehdiyeva",
+      "role": "Software Engineer",
+      "github": "https://github.com/samamehdiyeva6",
+      "bio": "Passionate about building scalable web applications."
+    },
+    {
+      "name": "Elnara Malikzada",
+      "role": "Frontend Developer",
+      "github": "https://github.com/elnara-malikzade-12728",
+      "bio": "Focuses on creating intuitive user interfaces and accessible design."
+    },
+    {
+      "name": "Aysu Mustafazada",
+      "role": "UI/UX Designer",
+      "github": "https://github.com/AysuMustafazade",
+      "bio": "Expert in visual storytelling and user-centered design systems."
+    },
+    {
+      "name": "Ismayil Abbasli",
+      "role": "Backend Developer",
+      "github": "https://github.com/IsmayilAbbasli69",
+      "bio": "Specializes in database architecture and API optimization."
+    },
+    {
+      "name": "Ramal Mirzazada",
+      "role": "Full Stack Developer",
+      "github": "https://github.com/MR10587",
+      "bio": "Bridging the gap between design and functionality."
+    },
+    {
+      "name": "Tural Gasimov",
+      "role": "DevOps Engineer",
+      "github": "https://github.com/turalgasimov",
+      "bio": "Ensuring smooth deployments and robust system performance."
+    }
+  ],
+    "projects": [
+        {
+        "title": "Portfolio Website",
+        "status": "Completed",
+        "link": "#",
+        "image": "assets/images/project1.png"
+        },
+        {
+        "title": "Task Manager",
+        "status": "In Progress",
+        "link": "#",
+        "image": "assets/images/project2.png"
+        },
+        {
+        "title": "E-commerce Platform",
+        "status": "Planned",
+        "link": "#",
+        "image": "assets/images/project3.png"
+        }
+    ]
+}
+ 
+]
